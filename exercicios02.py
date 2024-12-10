@@ -18,9 +18,24 @@
 
 # Exercício 22: Verificador de Palíndromo
 # Crie um programa que verifica se uma palavra ou frase é um palíndromo 
-# (lê-se igualmente de trás para frente, desconsiderando espaços e pontuações). 
-# Utilize try-except para garantir que a entrada seja uma string. 
+# (lê-se igualmente de trás para frente, desconsiderando espaços e 
+# pontuações). Utilize try-except para garantir que a 
+# entrada seja uma string. 
 # Dica: Utilize a função isinstance() para verificar o tipo da entrada.
+
+
+frase= input("Digite uma palavra ou frase: ")
+if isinstance(frase, str) and frase.replace(" ", "").isalpha():
+    frase_formatada = frase.replace(" ", "").lower()
+    if frase_formatada == frase_formatada[:: -1]:
+        print("É um palíndromo.")
+    else:
+        print("Não é um palíndromo.")
+else:
+    print("Entrada inválida. Por favor, digite uma palvra ou frase")
+
+
+
 
 
 # Exercício 23: Calculadora Simples
