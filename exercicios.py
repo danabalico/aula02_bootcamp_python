@@ -95,10 +95,27 @@ import math
 # Booleanos (bool)
 # 16.Escreva um programa que avalie duas expressões booleanas inseridas 
 # pelo usuário e retorne o resultado da operação AND entre elas.
+
+# bool01= input("Digite True ou False: ")
+# bool02= input("Digite True ou False: ")
+
+# resultado = bool01 and bool02
+
+# print(resultado)
+
+
 # 17.Crie um programa que receba dois valores booleanos do usuário e 
 # retorne o resultado da operação OR.
 # 18.Desenvolva um programa que peça ao usuário para inserir um valor 
 # booleano e, em seguida, inverta esse valor.
-# 19.Faça um programa que compare se dois números fornecidos pelo usuário são iguais.
+# 19.Faça um programa que compare se dois números fornecidos pelo 
+# usuário são iguais.
 # 20.Escreva um programa que verifique se dois números fornecidos 
 # pelo usuário são diferentes.
+
+# num01= float(input("Digite um valor: "))
+# num02= float(input("Digite outro valor: "))
+
+# if (num01 == num02): print("Os valor são iguais")
+# else: print("Os valores são diferentes")
+
