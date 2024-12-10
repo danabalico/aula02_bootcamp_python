@@ -24,15 +24,15 @@
 # Dica: Utilize a função isinstance() para verificar o tipo da entrada.
 
 
-frase= input("Digite uma palavra ou frase: ")
-if isinstance(frase, str) and frase.replace(" ", "").isalpha():
-    frase_formatada = frase.replace(" ", "").lower()
-    if frase_formatada == frase_formatada[:: -1]:
-        print("É um palíndromo.")
-    else:
-        print("Não é um palíndromo.")
-else:
-    print("Entrada inválida. Por favor, digite uma palvra ou frase")
+# frase= input("Digite uma palavra ou frase: ")
+# if isinstance(frase, str) and frase.replace(" ", "").isalpha():
+#     frase_formatada = frase.replace(" ", "").lower()
+#     if frase_formatada == frase_formatada[:: -1]:
+#         print("É um palíndromo.")
+#     else:
+#         print("Não é um palíndromo.")
+# else:
+#     print("Entrada inválida. Por favor, digite uma palvra ou frase")
 
 
 
@@ -40,9 +40,34 @@ else:
 
 # Exercício 23: Calculadora Simples
 # Desenvolva uma calculadora simples que aceite duas entradas numéricas 
-# e um operador (+, -, *, /) do usuário. Use try-except para lidar com divisões 
-# por zero e entradas não numéricas. Utilize if-elif-else para realizar a operação 
-# matemática baseada no operador fornecido. Imprima o resultado ou uma mensagem de erro apropriada.
+# e um operador (+, -, *, /) do usuário. Use try-except para lidar com
+# divisões por zero e entradas não numéricas. 
+# Utilize if-elif-else para realizar a operação 
+# matemática baseada no operador fornecido. 
+# Imprima o resultado ou uma mensagem de erro apropriada.
+
+try:
+    num01=float (input("Digite um número: "))
+    num02= float(input("Digite outro número: "))
+    operador= input("Digite o operador desejado (+, -, *, /): ")
+
+    if operador == '+':
+        resultado = num01 + num02
+    elif  operador == '-' :
+        resultado = num01 - num02
+    elif operador == '*':
+        resultado = num01 * num02
+    elif operador == '/' and num02 != 0:
+        resultado = num01 / num02
+    else:
+        print("Resultado inválido ou divisão por zero")
+    print("Resultado:", resultado)
+
+except ValueError:
+     print("Erro: Entrada inválida. Certifique-se de inserir números.")
+
+     
+
 
 
 # Exercício 24: Classificador de Números
