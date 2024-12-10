@@ -96,9 +96,22 @@
 #     print("Erro: Entrada inválida. Certifique-se de inserir números.")
 
 # Exercício 25: Conversão de Tipo com Validação
-# Crie um script que solicite ao usuário uma lista de números separados por vírgula. 
-# O programa deve converter a string de entrada em uma lista de números inteiros. 
-# Utilize try-except para tratar a conversão de cada número e validar que cada 
-# elemento da lista convertida é um inteiro. Se a conversão falhar ou um 
+# Crie um script que solicite ao usuário uma lista de números 
+# separados por vírgula. O programa deve converter a string de 
+# entrada em uma lista de números inteiros. 
+# Utilize try-except para tratar a conversão de cada número 
+# e validar que cada elemento da lista convertida é um inteiro. 
+# Se a conversão falhar ou um 
 # elemento não for um inteiro, imprima uma mensagem de erro. 
-# Se a conversão for bem-sucedida para todos os elementos, imprima a lista de inteiros.
+# Se a conversão for bem-sucedida para todos os elementos, 
+# imprima a lista de inteiros.
+
+lista_entrada= input("Digite uma lista de numeros, separados por vírgula")
+numeros_str = lista_entrada.split(",") #split separa
+numeros_int = [] # estou criando uma lista vazia
+try:
+    for num in numeros_str:
+        numeros_int.append(num.strip())#strip remove espaços em branco
+    print("Lista de inteiros:", numeros_int)
+except ValueError:
+    print("Erro: Certifique-se que todos os elementos são números inteiros válidos")
