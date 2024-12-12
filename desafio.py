@@ -66,6 +66,8 @@ except ValueError:
 # Converte a entrada para um número de ponto flutuante
 bonus_usuario = float(input("Digite o seu bonus: "))
 
+# mesmas questões da parte 2
+
 # 4) Calcule o valor do bônus final
 valor_do_bonus = CONSTANTE_BONUS + salario_usuario * bonus_usuario
 
